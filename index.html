@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"><title>EcoPrint | Turn bottles into pages</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar"><div class="brand"><span class="brand-icon">♻</span><span>eco<span>print</span><small>RECYCLE. PRINT. REPEAT.</small></span></div><div class="header-right"><span class="demo-tag">PROTOTYPE MODE</span><div class="credits"><span class="coin" aria-hidden="true"><span class="credit-mark">C</span></span><span><small>YOUR BALANCE</small><strong><span id="balance">0</span> credits</strong></span></div></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer><button id="demo-open" class="demo-link" aria-label="Open demo controls">Demo controls</button></footer>
+  </div>
+  <dialog id="demo-dialog"><form method="dialog"><div class="dialog-head"><div><p class="eyebrow">CLASSROOM DEMO</p><h2>Simulation controls</h2></div><button class="close" aria-label="Close">×</button></div><p>Choose what the next bottle scan will return. These controls represent simulated hardware.</p><label>Next scan result<select id="demo-result"><option value="small">Small · 1 credit</option><option value="medium">Medium · 2 credits</option><option value="large">Large · 3 credits</option><option value="invalid">Invalid bottle</option><option value="failed">Scanning failed</option><option value="storage">Storage confirmation failed</option></select></label><label class="check"><input type="checkbox" id="container-full"> Bottle container full</label><label class="check"><input type="checkbox" id="printer-error"> Simulate printer error</label><button class="button primary" value="close">Done</button></form></dialog>
+  <script src="app.js"></script>
+</body></html>
+
+
+
+
